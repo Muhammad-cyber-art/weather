@@ -19,7 +19,7 @@ button.addEventListener("click", (hodisa) => {
 const API_KEY = `00632439e6fb46f0806111812250403`;
 const API_URL = ` https://api.weatherapi.com/v1`;
 const getWeatherDetails = async (cityName) => {
-     const response = await fetch(`${API_URL}?key=${API_KEY}&q=${cityName}`);
+     const response = await fetch(`${API_URL}/current.json?key=${API_KEY}&q=${cityName}`);
      const data = await response.json();
      console.log(data);
      const imageIcon = data.current.condition.icon;
