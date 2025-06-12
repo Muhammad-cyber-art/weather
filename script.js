@@ -17,7 +17,7 @@ button.addEventListener("click", (hodisa) => {
      // console.log(y)
 })
 const API_KEY = `00632439e6fb46f0806111812250403`;
-const API_URL = `http://api.weatherapi.com/v1/forecast.json`;
+const API_URL = ` http://api.weatherapi.com/v1`;
 const getWeatherDetails = async (cityName) => {
      const response = await fetch(`${API_URL}?key=${API_KEY}&q=${cityName}`);
      const data = await response.json();
